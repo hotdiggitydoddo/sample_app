@@ -16,5 +16,10 @@ feature "Static pages content" do
 		visit about_path
 		expect(page).to have_content('About Us')
 	end
+
+	scenario "contact page should have the content 'Contact Us'" do
+		visit contact_path
+		expect(page).to have_content('Contact Us')
+	end
 end
 
